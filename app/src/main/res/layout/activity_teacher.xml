@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F9F9F9">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/teacherMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Main Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Add Question -->
+    <Button
+        android:id="@+id/addQuestionBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/teacherMenuTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"/>
+
+    <!-- Edit Question -->
+    <Button
+        android:id="@+id/editQuestionBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Question"
+        android:textSize="18sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/addQuestionBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <!-- Delete Question -->
+    <Button
+        android:id="@+id/deleteQuestionBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Question"
+        android:textSize="18sp"
+        android:backgroundTint="#E74C3C"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/editQuestionBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <!-- Display All Questions -->
+    <Button
+        android:id="@+id/displayQuestionsBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Display All Questions"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/deleteQuestionBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textSize="18sp"
+        android:backgroundTint="#9E9E9E"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/displayQuestionsBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
