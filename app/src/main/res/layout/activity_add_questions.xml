@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestionActivity"
+    android:padding="16dp">
+
+    <!-- Question Input -->
+    <EditText
+        android:id="@+id/questionInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Question"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Option A -->
+    <EditText
+        android:id="@+id/optionAInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Option A"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/questionInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Option B -->
+    <EditText
+        android:id="@+id/optionBInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Option B"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/optionAInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Option C -->
+    <EditText
+        android:id="@+id/optionCInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Option C"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/optionBInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Option D -->
+    <EditText
+        android:id="@+id/optionDInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Option D"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/optionCInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Correct Answer (expects A/B/C/D) -->
+    <EditText
+        android:id="@+id/correctAnswerInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correct Answer (A/B/C/D)"
+        android:inputType="textCapCharacters"
+        app:layout_constraintTop_toBottomOf="@id/optionDInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Question"
+        app:layout_constraintTop_toBottomOf="@id/correctAnswerInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
